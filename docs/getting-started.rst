@@ -65,7 +65,7 @@ Those two variables allow to easily change the default set of DH parameters to
 a different one, or specify the path to DH parameters file directly. The
 ``d()`` pattern in the first variable is a short version of ``default()`` Jinja
 filter and ensures that if the ``debops.dhparam`` role was not configured, Ansible
-will not stop execution and instead will template an empty ``role_dhparam``
+will not stop execution and instead will template an empty ``role__dhparam``
 variable which this role can check and disable DH parameter support if necessary.
 
 Because the configuration is passed using local Ansible facts,
